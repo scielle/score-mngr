@@ -1,0 +1,134 @@
+@font-face {
+    font-family: score;
+    src: url("fonts/Score.ttf");
+}
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/stadium.gif");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    text-shadow: 0px 0px 2px black;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    backdrop-filter: blur(6px);
+    width: 800px;
+    height: 500px;
+    max-width: 800px;
+    border: 7px solid whitesmoke;
+    box-shadow: 0px 0px 6px white;
+    border-radius: 15px;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.title {
+    font-family: score;
+    font-size: 47px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.count {
+    border: 5px solid white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 15%;
+    padding: 12% 9%;
+    font-size: 40px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    width: 100%;
+}
+
+.btn {
+    font-family: score;
+    color: white;
+    font-weight: bold;
+    border: 5px solid white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 7px;
+    width: 90%;
+    height: 70%;
+    padding: 15px 20px;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.row2 {
+    margin: -50px;
+    text-align: center;
+}
+
+.new {
+    font-family: score;
+    color: white;
+    font-weight: bold;
+    border: 5px solid white;
+    border-radius: 8px;
+    width: 200px;
+    height: 75px;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.win {
+    border: 5px solid white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 15%;
+    padding: 12% 9%;
+    font-size: 40px;
+    background-color: rgba(255, 217, 0, 0.5);
+    box-shadow: 0px 0px 15px rgb(255, 217, 0);
+}
+
+.lose {
+    border: 5px solid white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 15%;
+    padding: 12% 9%;
+    font-size: 40px;
+    background-color: rgba(251, 135, 135, 0.5);
+    box-shadow: 0px 0px 15px rgba(251, 135, 135);
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Score Counter</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="main" onload="checkwin()">
+        <div class="score">
+            <div class="row1">
+                <div class="title">
+                    <p>Team-1</p>
+                    <div class="count" id="c1">
+                        <p id="team1Sc">0</p>
+                    </div>
+                    <div class="btns">
+                        <button class="btn" onclick="incOneT1()">+1</button>
+                        <button class="btn" onclick="incTwoT1()">+2</button>
+                        <button class="btn" onclick="incThreeT1()">+3</button>
+                    </div>
+                </div>
+                <div class="title">
+                    <p>Team-2</p>
+                    <div class="count" id="c2">
+                        <p id="team2Sc">0</p>
+                    </div>
+                    <div class="btns">
+                        <button class="btn" onclick="incOneT2()">+1</button>
+                        <button class="btn" onclick="incTwoT2()">+2</button>
+                        <button class="btn" onclick="incThreeT2()">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <button class="new" onclick="reset()">New Game</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
